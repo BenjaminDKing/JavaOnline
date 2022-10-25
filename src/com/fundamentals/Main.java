@@ -1,7 +1,9 @@
 package com.fundamentals;
+import com.fundamentals.exercises.Lesson6Exercises;
 import com.fundamentals.lessons.Lesson5;
 import com.fundamentals.exercises.Lesson5Exercises;
 import com.fundamentals.lessons.Lesson6;
+import com.fundamentals.lessons.Lesson7;
 
 /*
 * This Main class is the entry point to the application
@@ -15,7 +17,9 @@ public class Main {
         //House myHouse = new House();
         //lesson5Examples();
         //exercise5Example();
-        lesson6Examples();
+        //lesson6Examples();
+        //exercise6Example();
+        lesson7Examples();
     } // End main method
 
     public static void lesson5Examples() {
@@ -49,5 +53,23 @@ public class Main {
         myLesson6.exampleChar();
         myLesson6.exampleEscape();
     } // End method lesson6Examples
+
+    public static void exercise6Example() {
+        Lesson6Exercises myExercises6 = new Lesson6Exercises();
+        myExercises6.exercise1("IS THIS LOWERCASE?");
+        myExercises6.exercise2();
+        myExercises6.exercise3();
+    }
+
+    public static void lesson7Examples() {
+        Lesson7 myLesson7 = new Lesson7();
+        myLesson7.basicMath();
+        myLesson7.exampleModulus();
+        // myLesson7.addTwoNumber();
+        myLesson7.exampleAssignment1();
+        myLesson7.exampleAssignment2();
+        myLesson7.exampleIncrement();
+        myLesson7.exampleDecrement();
+    }
 
 } // End class
