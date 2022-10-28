@@ -1,9 +1,9 @@
 package com.fundamentals;
-import com.fundamentals.exercises.Lesson6Exercises;
-import com.fundamentals.lessons.Lesson5;
+import com.fundamentals.lessons.*;
 import com.fundamentals.exercises.Lesson5Exercises;
-import com.fundamentals.lessons.Lesson6;
-import com.fundamentals.lessons.Lesson7;
+import com.fundamentals.exercises.Lesson6Exercises;
+import com.fundamentals.exercises.Lesson7Exercises;
+
 
 /*
 * This Main class is the entry point to the application
@@ -19,7 +19,10 @@ public class Main {
         //exercise5Example();
         //lesson6Examples();
         //exercise6Example();
-        lesson7Examples();
+        //lesson7Examples();
+        //exercise7Example();
+        lesson8Examples();
+
     } // End main method
 
     public static void lesson5Examples() {
@@ -70,6 +73,26 @@ public class Main {
         myLesson7.exampleAssignment2();
         myLesson7.exampleIncrement();
         myLesson7.exampleDecrement();
+    }
+
+    public static void exercise7Example() {
+        Lesson7Exercises myExercises7 = new Lesson7Exercises();
+        myExercises7.modulus(361);
+        myExercises7.assignmentOperators(15, 13);
+        myExercises7.pemdasExample();
+    }
+
+    public static void lesson8Examples() {
+        Lesson8 myLesson8 = new Lesson8();
+        myLesson8.basicIfExample(5,5);
+        myLesson8.basicIfElseExample(12, 17);
+        myLesson8.basicIfElseChainExample(42);
+        myLesson8.basicIfAndOrExample(108);
+        myLesson8.basicSwitchExample(2);
+        myLesson8.basicWhileExample();
+        myLesson8.basicDoWhileExample();
+        myLesson8.basicForLoopExample();
+        myLesson8.basicBranchExample();
     }
 
 } // End class
