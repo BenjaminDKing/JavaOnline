@@ -1,9 +1,6 @@
 package com.fundamentals;
 import com.fundamentals.lessons.*;
-import com.fundamentals.exercises.Lesson5Exercises;
-import com.fundamentals.exercises.Lesson6Exercises;
-import com.fundamentals.exercises.Lesson7Exercises;
-import com.fundamentals.exercises.Lesson8Exercises;
+import com.fundamentals.exercises.*;
 
 /*
 * This Main class is the entry point to the application
@@ -23,7 +20,9 @@ public class Main {
         //exercise7Example();
         //lesson8Examples();
         //exercise8Example();
-        lesson9Examples();
+        //lesson9Examples();
+        //exercise9Example();
+        lesson10Examples();
 
     } // End main method
 
@@ -113,4 +112,20 @@ public class Main {
         myLesson9.basicThreeDimensionalArray();
         myLesson9.basicJaggedArray();
     }
+
+    public static void exercise9Example() {
+        Lesson9Exercises myExercises9 = new Lesson9Exercises();
+        myExercises9.exercise1();
+        myExercises9.exercise2();
+    }
+
+    public static void lesson10Examples() {
+        Lesson10 myLesson10 = new Lesson10();
+        //myLesson10.myMethod();
+        Lesson10Extended myExtended = new Lesson10Extended();
+        //myLesson10.myDefaultMethod(); method is default and outside this package
+        myExtended.methodFromOtherClass();
+        //myLesson10.myProtectedMethod(); method is protected and is not subclassed and outside this package
+    } // End method lesson10Examples
+
 } // End class
