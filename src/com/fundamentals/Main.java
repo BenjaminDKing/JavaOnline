@@ -3,7 +3,7 @@ import com.fundamentals.lessons.*;
 import com.fundamentals.exercises.Lesson5Exercises;
 import com.fundamentals.exercises.Lesson6Exercises;
 import com.fundamentals.exercises.Lesson7Exercises;
-
+import com.fundamentals.exercises.Lesson8Exercises;
 
 /*
 * This Main class is the entry point to the application
@@ -21,7 +21,9 @@ public class Main {
         //exercise6Example();
         //lesson7Examples();
         //exercise7Example();
-        lesson8Examples();
+        //lesson8Examples();
+        //exercise8Example();
+        lesson9Examples();
 
     } // End main method
 
@@ -95,4 +97,20 @@ public class Main {
         myLesson8.basicBranchExample();
     }
 
+    public static void exercise8Example() {
+        Lesson8Exercises myExercises8 = new Lesson8Exercises();
+        myExercises8.exercise1("A String", "A String");
+        myExercises8.exercise1("A String", "A different string");
+        System.out.println(myExercises8.exercise2('A'));
+        System.out.println(myExercises8.exercise2('Z'));
+        myExercises8.exercise3();
+    }
+
+    public static void lesson9Examples() {
+        Lesson9 myLesson9 = new Lesson9();
+        myLesson9.basicIntArray();
+        myLesson9.basicTwoDimensionalArray();
+        myLesson9.basicThreeDimensionalArray();
+        myLesson9.basicJaggedArray();
+    }
 } // End class
