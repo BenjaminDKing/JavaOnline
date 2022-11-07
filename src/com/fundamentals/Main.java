@@ -22,7 +22,8 @@ public class Main {
         //exercise8Example();
         //lesson9Examples();
         //exercise9Example();
-        lesson10Examples();
+        //lesson10Examples();
+        lesson11Examples();
 
     } // End main method
 
@@ -127,5 +128,13 @@ public class Main {
         myExtended.methodFromOtherClass();
         //myLesson10.myProtectedMethod(); method is protected and is not subclassed and outside this package
     } // End method lesson10Examples
+
+    public static void lesson11Examples() {
+        House myHouse = new House();
+        House myOtherHouse = new House("Red");
+
+        Dog myDog = new Dog();
+        Dog anotherDog = new Dog("Bichon Frise");
+    }
 
 } // End class
