@@ -23,7 +23,9 @@ public class Main {
         //lesson9Examples();
         //exercise9Example();
         //lesson10Examples();
-        lesson11Examples();
+        //lesson11Examples();
+        //televisionExample();
+        OOPExamples();
 
     } // End main method
 
@@ -135,6 +137,17 @@ public class Main {
 
         Dog myDog = new Dog();
         Dog anotherDog = new Dog("Bichon Frise");
+    }
+
+    public  static void televisionExample() {
+        Television myTelevision = new Television(42, 199.98);
+        Television myOtherTelevision = new Television(55, 150, 10, true);
+        myOtherTelevision.turnOn();
+    }
+
+    public static void OOPExamples() {
+        Labrador myLab = new Labrador("Jeff", 78.6, "Gold");
+        myLab.fetch();
     }
 
 } // End class
