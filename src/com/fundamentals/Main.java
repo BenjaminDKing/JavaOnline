@@ -25,7 +25,8 @@ public class Main {
         //lesson10Examples();
         //lesson11Examples();
         //televisionExample();
-        OOPExamples();
+        //inheritanceExample();
+        lesson13Examples();
 
     } // End main method
 
@@ -145,9 +146,25 @@ public class Main {
         myOtherTelevision.turnOn();
     }
 
-    public static void OOPExamples() {
+    public static void inheritanceExample() {
         Labrador myLab = new Labrador("Jeff", 78.6, "Gold");
         myLab.fetch();
+    }
+
+    public static void lesson13Examples() {
+        House myHouse = new House("blue");
+        Condo myCondo = new Condo("medium");
+        myHouse.doorOpenClose(myHouse.getDoorColor());
+        myCondo.doorOpenClose(myCondo.getDoorColor());
+
+//        Dog genericDog = new Dog();
+//        Labrador myLab = new Labrador("Jeff", 87.1, "Black");
+//        genericDog.bark();
+//        myLab.bark();
+//        myLab.bark("Loudly");
+
+        House myNewHouse = new Condo();
+        myNewHouse.doorOpenClose();
     }
 
 } // End class

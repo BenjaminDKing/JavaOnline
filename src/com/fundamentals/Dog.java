@@ -23,6 +23,18 @@ public class Dog {
         this.age = age;
     }
 
+    public void bark() {
+        System.out.println("The dog barked.");
+    }
+
+    public void run() {
+        System.out.println("The dog ran.");
+    }
+
+    public void bark(int age) {
+        System.out.println("The " + age + " year old dog barked.");
+    }
+
     // Getters and Setters:
     public void setNumberOfLegs(int numberOfLegs) { this.numberOfLegs = numberOfLegs;}
 

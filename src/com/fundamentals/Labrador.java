@@ -11,14 +11,23 @@ public class Labrador extends Dog {
     }
 
     public Labrador(String name, double weight, String furColor) {
-        this.name = name;
-        this.weight = weight;
+        super();
         this.furColor = furColor;
     }
 
     public void fetch(){
         String name = getName();
         System.out.println(name + " fetched something!");
+    }
+
+    @Override
+    public void bark() {
+        super.bark();
+        System.out.println(name + " the labrador barked.");
+    }
+
+    public void bark(String volume){
+        System.out.println(name + " the labrador barked " + volume);
     }
 
     public void setName(String name) { this.name = name; }

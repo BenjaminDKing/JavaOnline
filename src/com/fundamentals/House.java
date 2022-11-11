@@ -8,6 +8,7 @@ public class House {
     private int windowSize;
 
     public House() {
+        this("white");
         System.out.println("This is the default constructor.");
     }
 
@@ -40,8 +41,13 @@ public class House {
     }
 
 
+    public void doorOpenClose() {
+        System.out.println("My house door is closed.");
+    }
 
-    public void doorOpenClose() {  }
+    public void doorOpenClose(String doorColor) {
+        System.out.println("The open door is " + doorColor);
+    }
 
     public String getDoorColor() {
         return doorColor;
