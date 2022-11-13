@@ -13,6 +13,8 @@ public class Labrador extends Dog {
     public Labrador(String name, double weight, String furColor) {
         super();
         this.furColor = furColor;
+        this.name = name;
+        this.weight = weight;
     }
 
     public void fetch(){
@@ -23,10 +25,11 @@ public class Labrador extends Dog {
     @Override
     public void bark() {
         super.bark();
-        System.out.println(name + " the labrador barked.");
+        System.out.println("The labrador barked.");
     }
 
     public void bark(String volume){
+        String name = getName();
         System.out.println(name + " the labrador barked " + volume);
     }
 

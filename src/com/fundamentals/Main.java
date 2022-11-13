@@ -157,11 +157,13 @@ public class Main {
         myHouse.doorOpenClose(myHouse.getDoorColor());
         myCondo.doorOpenClose(myCondo.getDoorColor());
 
-//        Dog genericDog = new Dog();
-//        Labrador myLab = new Labrador("Jeff", 87.1, "Black");
-//        genericDog.bark();
-//        myLab.bark();
-//        myLab.bark("Loudly");
+        Dog genericDog = new Dog();
+        Labrador myLab = new Labrador("Jeff", 87.1, "Black");
+
+        genericDog.bark();
+        myLab.bark();
+        myLab.bark("Loudly");
+        myLab.fetch();
 
         House myNewHouse = new Condo();
         myNewHouse.doorOpenClose();
