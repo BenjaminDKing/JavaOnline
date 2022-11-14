@@ -7,6 +7,18 @@ import com.fundamentals.exercises.*;
 * */
 public class Main {
 
+    public static int num = 0;
+
+    static {
+        System.out.println("Static block 1");
+        num = 42;
+    } // End static block
+
+    static {
+        System.out.println("Static block 2");
+        num = 52;
+    }
+
     public static void main(String[] args) {
         // This prints "Hello, Java!"
         //System.out.println("Hello, Java!");
@@ -26,7 +38,8 @@ public class Main {
         //lesson11Examples();
         //televisionExample();
         //inheritanceExample();
-        lesson13Examples();
+        //lesson13Examples();
+        lesson14Examples();
 
     } // End main method
 
@@ -168,5 +181,22 @@ public class Main {
         House myNewHouse = new Condo();
         myNewHouse.doorOpenClose();
     }
+
+    public static void lesson14Examples() {
+        // Cannot change value of a final
+        //Lesson14.MY_FIRST_FINAL = 10;
+
+        int total = Lesson14.MY_FIRST_FINAL * 35; // 2145 * 35
+        System.out.println(total);
+
+        // Can change the value of a non-final static
+        Lesson14.myFirstStatic = 98; // Original value was 25
+        System.out.println(Lesson14.myFirstStatic);
+
+        Lesson14.myFirstStaticMethod(10);
+
+        System.out.println("Block number was " + num);
+    }
+
 
 } // End class
