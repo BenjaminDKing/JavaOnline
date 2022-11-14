@@ -41,7 +41,9 @@ public class Main {
         //lesson13Examples();
         //lesson14Examples();
         //exercise14Example();
-        lesson15Examples();
+        //lesson15Examples();
+        //exercise15Example();
+        lesson16Examples();
 
     } // End main method
 
@@ -217,6 +219,40 @@ public class Main {
         Lesson15Sub mySub = new Lesson15Sub(10, myInt, "turned on");
         mySub.receiveCall();
         mySub.takePicture();
+    }
+
+    public static void exercise15Example() {
+        WaterBirds mySwan = new Swan();
+        WaterBirds myDuck = new Duck();
+
+        mySwan.forward();
+        mySwan.backward();
+        mySwan.standStill();
+
+        myDuck.forward();
+        myDuck.backward();
+        myDuck.standStill();
+    }
+
+    public static void lesson16Examples() {
+        Lesson16 myLesson16 = new Lesson16();
+        myLesson16.showEnums();
+        myLesson16.myFavoriteFlavor(Lesson16.IceCreamFlavors.ROCKY_ROAD);
+
+        DaysOfTheWeek d1[] = DaysOfTheWeek.values();
+        for(DaysOfTheWeek day: d1) {
+            System.out.println(day + " at index " + day.ordinal());
+        }
+
+        DaysOfTheWeek d3 = DaysOfTheWeek.WED;
+        d3.enumMethod();
+
+        Lesson16Lab[] labs = Lesson16Lab.values();
+
+        for(Lesson16Lab lab : labs) {
+            System.out.println("Labrador Color: " + lab.name() + " registration code: " +
+                    lab.getAction());
+        }
     }
 
 } // End class
