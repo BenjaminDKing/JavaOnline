@@ -14,7 +14,4 @@ public class Lesson14 {
         int total = MY_FIRST_FINAL * num;
         System.out.println(total);
     }
-
-
-
 }

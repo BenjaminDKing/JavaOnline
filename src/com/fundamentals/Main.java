@@ -9,15 +9,15 @@ public class Main {
 
     public static int num = 0;
 
-    static {
-        System.out.println("Static block 1");
-        num = 42;
-    } // End static block
-
-    static {
-        System.out.println("Static block 2");
-        num = 52;
-    }
+//    static {
+//        System.out.println("Static block 1");
+//        num = 42;
+//    }
+//
+//    static {
+//        System.out.println("Static block 2");
+//        num = 52;
+//    }
 
     public static void main(String[] args) {
         // This prints "Hello, Java!"
@@ -39,7 +39,9 @@ public class Main {
         //televisionExample();
         //inheritanceExample();
         //lesson13Examples();
-        lesson14Examples();
+        //lesson14Examples();
+        //exercise14Example();
+        lesson15Examples();
 
     } // End main method
 
@@ -198,5 +200,23 @@ public class Main {
         System.out.println("Block number was " + num);
     }
 
+    public static void exercise14Example() {
+        final double VOLTAGE = 1000;
+        final double CURRENT = 5;
+        final double RESISTANCE = 200;
+
+        Lesson14Exercises myExercises14 = new Lesson14Exercises();
+        System.out.println("Voltage: " + myExercises14.voltage(CURRENT, RESISTANCE));
+        System.out.println("Current: " + myExercises14.current(VOLTAGE, RESISTANCE));
+        System.out.println("Resistance: " + myExercises14.resistance(VOLTAGE, CURRENT));
+    }
+
+    public static void lesson15Examples() {
+        int[] myInt = {1, 2, 3, 4};
+        Lesson15Base myBase = new Lesson15Sub(10, myInt, "turned off");
+        Lesson15Sub mySub = new Lesson15Sub(10, myInt, "turned on");
+        mySub.receiveCall();
+        mySub.takePicture();
+    }
 
 } // End class
