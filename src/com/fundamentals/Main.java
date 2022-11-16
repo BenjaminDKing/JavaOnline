@@ -45,7 +45,9 @@ public class Main {
         //exercise15Example();
         //lesson16Examples();
         //exercise16Example();
-        lesson17Examples();
+        //lesson17Examples();
+        //exercise17Example();
+        lesson18Examples();
 
     } // End main method
 
@@ -268,6 +270,18 @@ public class Main {
         myLesson17.exampleArrayList2();
         myLesson17.exampleHashSet();
         myLesson17.exampleHashMap();
+    }
+
+    public static void exercise17Example() {
+        Lesson17Exercises myExercise17 = new Lesson17Exercises();
+        myExercise17.televisions();
+        myExercise17.houses();
+    }
+
+    public static void lesson18Examples() {
+        Lesson18 myLesson18 = new Lesson18();
+        myLesson18.exampleException();
+        myLesson18.myArrayException();
     }
 
 } // End class
