@@ -43,7 +43,9 @@ public class Main {
         //exercise14Example();
         //lesson15Examples();
         //exercise15Example();
-        lesson16Examples();
+        //lesson16Examples();
+        //exercise16Example();
+        lesson17Examples();
 
     } // End main method
 
@@ -253,6 +255,19 @@ public class Main {
             System.out.println("Labrador Color: " + lab.name() + " registration code: " +
                     lab.getAction());
         }
+    }
+
+    public static void exercise16Example() {
+        Lesson16Exercises myExercise16 = new Lesson16Exercises();
+        myExercise16.famousMovie(Lesson16Exercises.MovieGenres.DOCUMENTARY);
+    }
+
+    public static void lesson17Examples() {
+        Lesson17 myLesson17 = new Lesson17();
+        myLesson17.exampleArrayList1();
+        myLesson17.exampleArrayList2();
+        myLesson17.exampleHashSet();
+        myLesson17.exampleHashMap();
     }
 
 } // End class
