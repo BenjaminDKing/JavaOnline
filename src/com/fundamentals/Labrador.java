@@ -10,8 +10,8 @@ public class Labrador extends Dog {
         System.out.println("Default Labrador constructor");
     }
 
-    public Labrador(String name, double weight, String furColor) {
-        super();
+    public Labrador(int numberOfLegs, String breed, int age, String name, double weight, String furColor) {
+        super(numberOfLegs, breed, age);
         this.furColor = furColor;
         this.name = name;
         this.weight = weight;

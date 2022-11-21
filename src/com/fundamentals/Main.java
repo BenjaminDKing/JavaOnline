@@ -37,7 +37,7 @@ public class Main {
         //lesson10Examples();
         //lesson11Examples();
         //televisionExample();
-        //inheritanceExample();
+        inheritanceExample();
         //lesson13Examples();
         //lesson14Examples();
         //exercise14Example();
@@ -47,7 +47,8 @@ public class Main {
         //exercise16Example();
         //lesson17Examples();
         //exercise17Example();
-        lesson18Examples();
+        //lesson18Examples();
+        //exercise18Example();
 
     } // End main method
 
@@ -168,7 +169,7 @@ public class Main {
     }
 
     public static void inheritanceExample() {
-        Labrador myLab = new Labrador("Jeff", 78.6, "Gold");
+        Labrador myLab = new Labrador(4, "Labrador", 10, "Jeff", 78.6, "Gold");
         myLab.fetch();
     }
 
@@ -179,7 +180,7 @@ public class Main {
         myCondo.doorOpenClose(myCondo.getDoorColor());
 
         Dog genericDog = new Dog();
-        Labrador myLab = new Labrador("Jeff", 87.1, "Black");
+        Labrador myLab = new Labrador(4, "Labrador", 11, "Jeff", 87.1, "Black");
 
         genericDog.bark();
         myLab.bark();
@@ -282,6 +283,11 @@ public class Main {
         Lesson18 myLesson18 = new Lesson18();
         myLesson18.exampleException();
         myLesson18.myArrayException();
+    }
+
+    public static void exercise18Example() {
+        Lesson18Exercises myExercises18 = new Lesson18Exercises();
+        myExercises18.isLeapYear();
     }
 
 } // End class

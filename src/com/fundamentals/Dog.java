@@ -21,6 +21,7 @@ public class Dog {
         this.numberOfLegs = numberOfLegs;
         this.breed = breed;
         this.age = age;
+        System.out.println("This is a dog.");
     }
 
     public void bark() {
