@@ -37,7 +37,7 @@ public class Main {
         //lesson10Examples();
         //lesson11Examples();
         //televisionExample();
-        inheritanceExample();
+        //inheritanceExample();
         //lesson13Examples();
         //lesson14Examples();
         //exercise14Example();
@@ -49,6 +49,9 @@ public class Main {
         //exercise17Example();
         //lesson18Examples();
         //exercise18Example();
+        //exerciseDateTime();
+        lesson19Example();
+
 
     } // End main method
 
@@ -288,6 +291,26 @@ public class Main {
     public static void exercise18Example() {
         Lesson18Exercises myExercises18 = new Lesson18Exercises();
         myExercises18.isLeapYear();
+    }
+
+    public static void exerciseDateTime() {
+        MyCalendarData myCalendar = new MyCalendarData();
+        //myCalendar.localDateTimeExamples();
+        //myCalendar.epochExample();
+        //myCalendar.localDateExample();
+        //myCalendar.localTimeExample();
+        //myCalendar.formatDateTimeExample();
+        myCalendar.timePeriodExample();
+    }
+
+    public static void lesson19Example() {
+        Lesson19 nineteen = new Lesson19();
+        //nineteen.noLambda();
+        //nineteen.withLambda();
+        //nineteen.multipleLambda();
+        //nineteen.listLambda();
+        //nineteen.filterLambda();
+        nineteen.queryInfo(Lesson19.getInfo(), (id -> id.getName() == "Bill"));
     }
 
 } // End class

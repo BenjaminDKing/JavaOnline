@@ -8,13 +8,13 @@ public class House {
     private int windowSize;
 
     public House() {
-        this("white");
-        System.out.println("This is the default constructor.");
+        this("White");
+        //System.out.println("This is the default constructor.");
     }
 
     public House(String doorColor) {
         this("concrete", "composite", doorColor, 23);
-        System.out.println("The door color is " + doorColor);
+        //System.out.println("The door color is " + doorColor);
     }
 
     public House(String foundation, String roofType, String doorColor, int windowSize) {
@@ -64,4 +64,11 @@ public class House {
     public void setWindowSize(int windowSize) {
         this.windowSize = windowSize;
     }
+
+    public String toString() {
+        return getClass().getSimpleName() + " Foundation: " + getFoundation() +
+                " Roof Style: " + getRoofType() + " Door Color: " + getDoorColor() +
+                " Window Sizes: " + getWindowSize();
+    }
+
 }
